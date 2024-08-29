@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyeasie: Cybersecurity and Ethical Hacking Solutions</title>
+  <style>
+    /* Basic Reset and Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+    body {
+      color: #ffffff;
+      background-color: #121212;
+      /* Dark theme for a techy feel */
+    }
+
+    /* Header and Navigation */
+    header {
+      background-color: #1a1a2e;
+      /* Darker background for the header */
+      padding: 15px 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo img {
+      width: 50px;
+      height: auto;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #4FC3F7;
+      /* Accent color on hover */
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-image: url('tech-background.jpg');
+      /* Background image for a tech feel */
+      background-size: cover;
+      color: #fff;
+      padding-top: 70px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .hero .cta {
+      background-color: #4FC3F7;
+      color: #1a1a2e;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero .cta:hover {
+      background-color: #3a9ecf;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1a1a2e;
+      color: #ffffff;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    /* Responsive Media Queries */
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+      }
+      .menu-toggle {
+        display: block;
+        cursor: pointer;
+        color: #FFFFFF;
+      }
+      .show-menu {
+        display: block !important;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #1a1a2e;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="logo.jpg" alt="Cyeasie Logo">
+      <span class="tagline">Cybersecurity and Ethical Hacking Solutions</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero" id="home">
+    <div>
+      <h1>Welcome to Cyeasie</h1>
+      <p>
+        Your Trusted Partner in Cybersecurity and Ethical Hacking
+      </p>
+      <a href="#services" class="cta">Explore Our Services</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <p>
+        Protect your business with our comprehensive cybersecurity solutions.
+      </p>
+      <!-- Services cards can go here -->
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Cyeasie</h2>
+      <p>
+        At Cyeasie, we provide expert cybersecurity and ethical hacking services, ensuring your digital assets are safe and secure.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        Email: <a href="mailto:support@cyeasie.com">support@cyeasie.com</a>
+      </p>
+      <p>
+        Phone: +256 785874322
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      2024&copy; Cyeasie. All Rights Reserved.
+    </p>
+  </footer>
+
+  <script>
+    // JavaScript to toggle mobile menu
+    function toggleMenu() {
+      const menu = document.querySelector('nav ul');
+      menu.classList.toggle('show-menu');
+    }
+  </script>
+</body>
+</html>
