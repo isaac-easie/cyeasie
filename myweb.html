@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cyeasie: Cybersecurity and Ethical Hacking Solutions</title>
+  <title>Cyeasie: Pioneering Cyber Tech Solutions</title>
   <style>
     /* Basic Reset and Global Styles */
     * {
@@ -13,15 +13,15 @@
       font-family: 'Arial', sans-serif;
     }
     body {
-      color: #ffffff;
-      background-color: #121212;
-      /* Dark theme for a techy feel */
+      color: #e0e0e0;
+      background-color: #101010;
+      /* Dark theme with softer tones */
     }
 
     /* Header and Navigation */
     header {
-      background-color: #1a1a2e;
-      /* Darker background for the header */
+      background-color: #1b1b32;
+      /* Deep navy for the header */
       padding: 15px 20px;
       position: fixed;
       width: 100%;
@@ -31,9 +31,22 @@
       justify-content: space-between;
       align-items: center;
     }
+    .logo {
+      display: flex;
+      align-items: center;
+      color: #4fc3f7;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
     .logo img {
       width: 50px;
       height: auto;
+      margin-right: 10px;
+    }
+    .tagline {
+      font-size: 0.9rem;
+      color: #c5c6c7;
+      margin-left: 10px;
     }
     nav ul {
       list-style: none;
@@ -41,12 +54,13 @@
       gap: 20px;
     }
     nav a {
-      color: #FFFFFF;
+      color: #e0e0e0;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s ease;
     }
     nav a:hover {
-      color: #4FC3F7;
+      color: #4fc3f7;
       /* Accent color on hover */
     }
 
@@ -57,27 +71,31 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      background-image: url('tech-background.jpg');
-      /* Background image for a tech feel */
+      background-image: url('cyber-tech-background.jpg');
+      /* Use a suitable cyber tech-themed image */
       background-size: cover;
-      color: #fff;
+      color: #ffffff;
       padding-top: 70px;
     }
     .hero h1 {
-      font-size: 3rem;
+      font-size: 3.5rem;
+      color: #4fc3f7;
+      /* Highlight color for the main title */
       margin-bottom: 10px;
     }
     .hero p {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       margin-bottom: 20px;
+      color: #e0e0e0;
     }
     .hero .cta {
-      background-color: #4FC3F7;
-      color: #1a1a2e;
-      padding: 10px 20px;
+      background-color: #4fc3f7;
+      color: #1b1b32;
+      padding: 12px 25px;
       border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
+      transition: background-color 0.3s ease;
     }
     .hero .cta:hover {
       background-color: #3a9ecf;
@@ -91,22 +109,34 @@
     h2 {
       margin-bottom: 20px;
       font-size: 2.5rem;
+      color: #4fc3f7;
+      /* Section headers with accent color */
     }
     p {
       font-size: 1rem;
       margin-bottom: 20px;
+      color: #c5c6c7;
     }
 
     /* Footer */
     footer {
-      background-color: #1a1a2e;
-      color: #ffffff;
-      padding: 10px 20px;
+      background-color: #1b1b32;
+      color: #e0e0e0;
+      padding: 20px;
       text-align: center;
     }
+    .social-media a {
+      color: #4fc3f7;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+    .social-media a:hover {
+      color: #e0e0e0;
+    }
 
-    /* Responsive Media Queries */
-    @media (max-width: 768px) {
+    /* Responsive Media Queries */@media (max-width: 768px) {
       nav ul {
         display: none;
       }
@@ -120,7 +150,7 @@
         position: absolute;
         top: 70px;
         right: 20px;
-        background-color: #1a1a2e;
+        background-color: #1b1b32;
         padding: 10px;
         border-radius: 5px;
       }
@@ -132,14 +162,17 @@
   <header>
     <div class="logo">
       <img src="logo.jpg" alt="Cyeasie Logo">
-      <span class="tagline">Cybersecurity and Ethical Hacking Solutions</span>
+      <div>
+        Cyeasie
+      </div>
+      <span class="tagline">Pioneering Cyber Tech Solutions</span>
     </div>
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#about">Our Mission</a></li>
+        <li><a href="#contact">Get In Touch</a></li>
       </ul>
       <div class="menu-toggle" onclick="toggleMenu()">
         ☰
@@ -152,40 +185,45 @@
     <div>
       <h1>Welcome to Cyeasie</h1>
       <p>
-        Your Trusted Partner in Cybersecurity and Ethical Hacking
+        Redefining Cybersecurity and Technological Defense
       </p>
-      <a href="#services" class="cta">Explore Our Services</a>
+      <a href="#solutions" class="cta">Discover Our Solutions</a>
     </div>
   </div>
 
   <!-- Main Content -->
   <main>
-    <!-- Services Section -->
-    <section id="services">
-      <h2>Our Services</h2>
+    <!-- Solutions Section -->
+    <section id="solutions">
+      <h2>Our Cutting-Edge Solutions</h2>
       <p>
-        Protect your business with our comprehensive cybersecurity solutions.
+        Stay ahead of cyber threats with our state-of-the-art technologies.
       </p>
-      <!-- Services cards can go here -->
+      <!-- Solution cards or details can go here -->
     </section>
 
     <!-- About Section -->
     <section id="about">
-      <h2>About Cyeasie</h2>
+      <h2>Our Mission</h2>
       <p>
-        At Cyeasie, we provide expert cybersecurity and ethical hacking services, ensuring your digital assets are safe and secure.
+        Cyeasie is dedicated to innovation in cybersecurity, empowering businesses with the latest in digital defense technology.
       </p>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-      <h2>Contact Us</h2>
+      <h2>Get In Touch</h2>
       <p>
         Email: <a href="mailto:support@cyeasie.com">support@cyeasie.com</a>
       </p>
       <p>
         Phone: +256 785874322
       </p>
+      <div class="social-media">
+        <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+        <a href="https://facebook.com/yourhandle" target="_blank">Facebook</a>
+        <a href="https://linkedin.com/in/yourhandle" target="_blank">LinkedIn</a>
+      </div>
     </section>
   </main>
 
@@ -194,6 +232,11 @@
     <p>
       2024&copy; Cyeasie. All Rights Reserved.
     </p>
+    <div class="social-media">
+      <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+      <a href="https://facebook.com/yourhandle" target="_blank">Facebook</a>
+      <a href="https://linkedin.com/in/yourhandle" target="_blank">LinkedIn</a>
+    </div>
   </footer>
 
   <script>
